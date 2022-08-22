@@ -8,7 +8,7 @@
         </div>
         <div class="col-9 pt-5">
             <div class="ps-4">
-                <h1 style="font-weight: lighter;">yahya.lz</h1>
+                <h1 style="font-weight: lighter;">{{$user->username}}</h1>
             </div>
             <div class="d-flex">
                 <div class="px-4"><strong>999</strong> posts</div>
