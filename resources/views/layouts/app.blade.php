@@ -23,6 +23,7 @@
                 <a class="navbar-brand d-flex" href="{{ url('/') }}">
                     <div><img src="/svg/instagramtext.svg" alt="instagram icon" style="height: 40px;"/></div>
                 </a>
+                                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
