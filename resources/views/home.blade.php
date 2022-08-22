@@ -4,15 +4,31 @@
 <div class="container">
     <div class="row">
         <div class="col-3 p-5">
-            <img src="https://st2.depositphotos.com/1734074/11386/v/950/depositphotos_113862774-stock-illustration-vector-businessman-profile-icon-man.jpg" alt="profile image" class="rounded-circle" style="height: 150px;"/>
+            <img src="/img/pic.jpg" alt="profile image" class="rounded-circle" style="height: 125px;"/>
         </div>
         <div class="col-9 pt-5">
-            <div><h1>username</h1></div>
+            <div class="ps-4">
+                <h1 style="font-weight: lighter;">yahya.lz</h1>
+            </div>
             <div class="d-flex">
                 <div class="px-4"><strong>999</strong> posts</div>
                 <div class="px-4"><strong>999</strong> followers</div>
                 <div class="px-4"><strong>999</strong> following</div>
             </div>
+            <div class="ps-4">Yahya Lazrek</div>
+            <div class="ps-4">description blabla...</div>
+            <div class="ps-4"><a href="#">www.yahyalazrek.com</a></div>
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col-4">
+            <img src="/img/post1.jpg" alt="post image" class="w-100"/>
+        </div>
+        <div class="col-4">
+            <img src="/img/post1.jpg" alt="post image" class="w-100"/>
+        </div>
+        <div class="col-4">
+            <img src="/img/post1.jpg" alt="post image" class="w-100"/>
         </div>
     </div>
 </div>
