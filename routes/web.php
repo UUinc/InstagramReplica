@@ -1,5 +1,6 @@
 <?php
 
+use App\Mail\NewUserWelcomeMail;
 use Illuminate\Support\Facades\Route;
 
 /*
