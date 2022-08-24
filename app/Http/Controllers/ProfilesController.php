@@ -31,6 +31,7 @@ class ProfilesController extends Controller
             'image' => '',
         ]);
         
+        $imagepath = $user->profile->image;
         if(request('image'))
         {
             $imagepath = request('image')->store('profile', 'public');

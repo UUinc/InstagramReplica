@@ -12,7 +12,7 @@
                 <div class="d-flex ">
                     <div>
                         <a href="/profile/{{ $post->user_id }}">
-                            <img src="/storage/{{ $post->user->profile->image }}" alt="profile image" class="rounded-circle w-100" style="max-width: 30px;"/>
+                            <img src="{{ $post->user->profile->profileImage() }}" alt="profile image" class="rounded-circle w-100" style="max-width: 30px;"/>
                         </a>
                     </div>
                     <div class="ps-2">
