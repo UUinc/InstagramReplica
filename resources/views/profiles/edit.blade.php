@@ -20,7 +20,6 @@
                         class="form-control @error('Title') is-invalid @enderror" 
                         name="Title" 
                         value="{{ old('Title') ?? $user->profile->title }}" 
-                        required 
                         autocomplete="Title" autofocus>
 
                     @error('Title')
@@ -38,7 +37,6 @@
                         class="form-control @error('Description') is-invalid @enderror" 
                         name="Description" 
                         value="{{ old('Description') ?? $user->profile->description }}" 
-                        required 
                         autocomplete="Description" autofocus>
 
                     @error('Description')
@@ -59,7 +57,9 @@
                         autocomplete="Url" autofocus>
 
                     @error('Url')
-                        <strong style="color: red;">{{ $message }}</strong>
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
                     @enderror
                 </div>
                 

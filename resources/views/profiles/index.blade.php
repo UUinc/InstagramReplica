@@ -10,7 +10,7 @@
             <div class="ps-4 pb-3 d-flex ">
                 <h2 style="font-weight: lighter;">{{$user->username}}</h2>
                 
-                @if(auth() ? True : auth()->user()->id != $user->id)
+                @if(auth()->user() == null ? True : auth()->user()->id != $user->id)
                 <follow-button user-id="{{ $user->id }}" follows="{{ $follows }}"></follow-button>
                 @endif
                 
