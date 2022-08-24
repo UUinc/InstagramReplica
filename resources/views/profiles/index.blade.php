@@ -17,13 +17,7 @@
                 @can('update', $user->profile)
                 <a 
                 href="/profile/{{ $user->id }}/edit" 
-                class="ms-4 mb-2 pt-1 ps-2 px-2" 
-                style=" color:black; 
-                        font-weight: bold; 
-                        border: 1px darkgray solid; 
-                        border-radius: 5px; 
-                        font-style:none;
-                        text-decoration: none;">
+                class="ms-4 mb-2 pt-1 ps-2 px-2 button">
                 Edit profile</a>
                 <a href="/p/create" class="ps-4 pt-1">
                     <div><img src="/img/add.png" alt="add icon" style="height: 25px;"/></div>
@@ -36,7 +30,7 @@
                 <div class="px-4"><strong>{{ $followingCount  }}</strong> following</div>
             </div>
             <div class="ps-4"><strong>{{ $user->profile->title }}</strong></div>
-            <div class="ps-4">{{ $user->profile->description }}</div>
+            <div class="ps-4"><pre>{{ $user->profile->description }}</pre></div>
             <div class="ps-4"><a href="{{ $user->profile->url }}">{{ $user->profile->url }}</a></div>
         </div>
     </div>

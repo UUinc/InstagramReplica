@@ -32,13 +32,13 @@
                 <div class="form-group row">
                     <label for="Description" class="col-md-4 col-form-label">Description</label>
 
-                    <input id="Description" 
+                    <textarea id="Description" 
                         type="text" 
                         class="form-control @error('Description') is-invalid @enderror" 
                         name="Description" 
                         value="{{ old('Description') ?? $user->profile->description }}" 
                         autocomplete="Description" autofocus>
-
+                    </textarea>
                     @error('Description')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>

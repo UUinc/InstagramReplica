@@ -24,7 +24,7 @@
                         <b>•</b>
                     </div>
                     <div class="ps-1">
-                        <a href="#" style="text-decoration: none;">
+                        <a href="#">
                             <b>Follow</b>
                         </a>
                     </div>

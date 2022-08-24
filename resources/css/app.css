@@ -1,0 +1,17 @@
+.button, .button:hover
+{
+    color:black; 
+    border: 1px darkgray solid; 
+    border-radius: 5px;
+}
+pre
+{
+    font-size: medium;
+    font-family: 'Open Sans', sans-serif !important;
+    margin: 0 !important;
+}
+a
+{
+    text-decoration: none !important;
+    font-weight: bold;
+}
