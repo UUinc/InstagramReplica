@@ -10,7 +10,9 @@
             <div class="ps-4 pb-3 d-flex ">
                 <h2 style="font-weight: lighter;">{{$user->username}}</h2>
                 
+                @if(auth()->user()->id != $user->id)
                 <follow-button user-id="{{ $user->id }}" follows="{{ $follows }}"></follow-button>
+                @endif
                 
                 @can('update', $user->profile)
                 <a 
@@ -29,9 +31,9 @@
                 @endcan
             </div>
             <div class="d-flex pb-3">
-                <div class="px-4"><strong>{{ $user->posts->count() }}</strong> posts</div>
-                <div class="px-4"><strong>{{ $user->profile->followers->count() }}</strong> followers</div>
-                <div class="px-4"><strong>{{ $user->following->count() }}</strong> following</div>
+                <div class="px-4"><strong>{{ $postCount }}</strong> posts</div>
+                <div class="px-4"><strong>{{ $followersCount }}</strong> followers</div>
+                <div class="px-4"><strong>{{ $followingCount  }}</strong> following</div>
             </div>
             <div class="ps-4"><strong>{{ $user->profile->title }}</strong></div>
             <div class="ps-4">{{ $user->profile->description }}</div>
