@@ -25,7 +25,7 @@
                     </div>
                     <div class="ps-1">
                         <a href="#" style="text-decoration: none;">
-                            <b>follow</b>
+                            <b>Follow</b>
                         </a>
                     </div>
                 </div>

@@ -9,6 +9,9 @@
         <div class="col-8 pt-5">
             <div class="ps-4 pb-3 d-flex ">
                 <h2 style="font-weight: lighter;">{{$user->username}}</h2>
+                
+                <follow-button user-id="{{ $user->id }}" follows="{{ $follows }}"></follow-button>
+                
                 @can('update', $user->profile)
                 <a 
                 href="/profile/{{ $user->id }}/edit" 
@@ -26,9 +29,9 @@
                 @endcan
             </div>
             <div class="d-flex pb-3">
-                <div class="px-4"><strong>{{$user->posts->count()}}</strong> posts</div>
-                <div class="px-4"><strong>1B</strong> followers</div>
-                <div class="px-4"><strong>0</strong> following</div>
+                <div class="px-4"><strong>{{ $user->posts->count() }}</strong> posts</div>
+                <div class="px-4"><strong>{{ $user->profile->followers->count() }}</strong> followers</div>
+                <div class="px-4"><strong>{{ $user->following->count() }}</strong> following</div>
             </div>
             <div class="ps-4"><strong>{{ $user->profile->title }}</strong></div>
             <div class="ps-4">{{ $user->profile->description }}</div>
