@@ -4,11 +4,12 @@
 <div class="container">
     <div class="row">
         <div class="col-4 p-5">
-            <img src="/img/pic.jpg" alt="profile image" class="rounded-circle" style="height: 150px;"/>
+            <img src="/storage/{{ $user->profile->image }}" alt="profile image" class="rounded-circle" style="height: 150px;"/>
         </div>
         <div class="col-8 pt-5">
             <div class="ps-4 pb-3 d-flex ">
                 <h2 style="font-weight: lighter;">{{$user->username}}</h2>
+                @can('update', $user->profile)
                 <a 
                 href="/profile/{{ $user->id }}/edit" 
                 class="ms-4 mb-2 pt-1 ps-2 px-2" 
@@ -20,8 +21,9 @@
                         text-decoration: none;">
                 Edit profile</a>
                 <a href="/p/create" class="ps-4 pt-1">
-                        <div><img src="/img/add.png" alt="add icon" style="height: 25px;"/></div>
+                    <div><img src="/img/add.png" alt="add icon" style="height: 25px;"/></div>
                 </a>
+                @endcan
             </div>
             <div class="d-flex pb-3">
                 <div class="px-4"><strong>{{$user->posts->count()}}</strong> posts</div>
