@@ -13,16 +13,16 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="Title" class="col-md-4 col-form-label">Title</label>
+                    <label for="title" class="col-md-4 col-form-label">Title</label>
 
-                    <input id="Title" 
+                    <input id="title" 
                         type="text" 
-                        class="form-control @error('Title') is-invalid @enderror" 
-                        name="Title" 
-                        value="{{ old('Title') ?? $user->profile->title }}" 
-                        autocomplete="Title" autofocus>
+                        class="form-control @error('title') is-invalid @enderror" 
+                        name="title" 
+                        value="{{ old('title') ?? $user->profile->title }}" 
+                        autocomplete="title" autofocus>
 
-                    @error('Title')
+                    @error('title')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -30,16 +30,16 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="Description" class="col-md-4 col-form-label">Description</label>
+                    <label for="description" class="col-md-4 col-form-label">Description</label>
 
-                    <textarea id="Description" 
+                    <textarea id="description" 
                         type="text" 
-                        class="form-control @error('Description') is-invalid @enderror" 
-                        name="Description" 
-                        value="{{ old('Description') ?? $user->profile->description }}" 
-                        autocomplete="Description" autofocus>
+                        class="form-control @error('description') is-invalid @enderror" 
+                        name="description" 
+                        value="{{ old('description') ?? $user->profile->description }}" 
+                        autocomplete="description" autofocus>
                     </textarea>
-                    @error('Description')
+                    @error('description')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -47,16 +47,16 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="Url" class="col-md-4 col-form-label">Url</label>
+                    <label for="url" class="col-md-4 col-form-label">Url</label>
 
-                    <input id="Url" 
+                    <input id="url" 
                         type="text" 
-                        class="form-control @error('Url') is-invalid @enderror" 
-                        name="Url" 
-                        value="{{ old('Url') ?? $user->profile->url }}"
-                        autocomplete="Url" autofocus>
+                        class="form-control @error('url') is-invalid @enderror" 
+                        name="url" 
+                        value="{{ old('url') ?? $user->profile->url }}"
+                        autocomplete="url" autofocus>
 
-                    @error('Url')
+                    @error('url')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -68,7 +68,7 @@
                     <input type="file" class="form-control-file" id="image" name="image"/>
 
                     @error('image')
-                        <strong style="color: red;">{{ $message }}</strong>
+                        <strong class="error">{{ $message }}</strong>
                     @enderror
                 </div>
                 

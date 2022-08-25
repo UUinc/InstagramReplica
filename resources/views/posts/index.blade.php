@@ -5,17 +5,16 @@
 <div class="container">
     @foreach($posts as $post)
         <div class="row">
-            <div class="col-6 offset-3 mt-2 mb-2 pt-3 pb-1" 
-                 style="border:1px #DDD solid; border-radius:7px; padding:0;">
+            <div class="col-6 offset-3 mt-2 mb-2 pt-3 pb-1 post-frame">
                 <!-- User profile picture and username -->
                 <div class="d-flex ps-3 pb-3">
                     <div>
                         <a href="/profile/{{ $post->user_id }}">
-                            <img src="{{ $post->user->profile->profileImage() }}" alt="profile image" class="rounded-circle w-100" style="max-width: 30px;"/>
+                            <img src="{{ $post->user->profile->profileImage() }}" alt="profile image" class="rounded-circle w-100" height="30"/>
                         </a>
                     </div>
                     <div class="ps-2">
-                        <a href="/profile/{{ $post->user_id }}" style="color:black;  text-decoration: none;">
+                        <a href="/profile/{{ $post->user_id }}" class="username-link">
                             <b>{{ $post->user->username }}</b>
                         </a>
                     </div>
@@ -28,7 +27,7 @@
                 <div class="ps-3 pt-3">
                     <div>
                         <p>
-                            <a href="/profile/{{ $post->user_id }}" style="color:black; text-decoration: none;">
+                            <a href="/profile/{{ $post->user_id }}" class="username-link">
                                 <b>{{ $post->user->username }}</b>
                             </a> 
                             {{ $post->caption }}

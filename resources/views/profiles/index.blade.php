@@ -4,11 +4,11 @@
 <div class="container">
     <div class="row">
         <div class="col-4 p-5">
-            <img src="{{ $user->profile->profileImage() }}" alt="profile image" class="rounded-circle" style="height: 150px;"/>
+            <img src="{{ $user->profile->profileImage() }}" alt="profile image" class="rounded-circle" height="150"/>
         </div>
         <div class="col-8 pt-5">
             <div class="ps-4 pb-3 d-flex ">
-                <h2 style="font-weight: lighter;">{{$user->username}}</h2>
+                <h2>{{$user->username}}</h2>
                 
                 @if(auth()->user() == null ? True : auth()->user()->id != $user->id)
                 <follow-button user-id="{{ $user->id }}" follows="{{ $follows }}"></follow-button>
@@ -20,7 +20,7 @@
                 class="ms-4 mb-2 pt-1 ps-2 px-2 button">
                 Edit profile</a>
                 <a href="/p/create" class="ps-4 pt-1">
-                    <div><img src="/img/add.png" alt="add icon" style="height: 25px;"/></div>
+                    <div><img src="/img/add.png" alt="add icon" height="25"/></div>
                 </a>
                 @endcan
             </div>

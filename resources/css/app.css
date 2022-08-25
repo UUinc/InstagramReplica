@@ -1,8 +1,22 @@
+.post-frame
+{
+    border:1px #DDD solid;
+    border-radius:7px;
+    padding:0 !important;
+}
+.username-link, .username-link:hover
+{
+    color: black;
+}
 .button, .button:hover
 {
     color:black; 
     border: 1px darkgray solid; 
     border-radius: 5px;
+}
+.error
+{
+    color: #dc3545;
 }
 pre
 {
@@ -14,4 +28,8 @@ a
 {
     text-decoration: none !important;
     font-weight: bold;
+}
+.hr
+{
+    opacity: .1;
 }

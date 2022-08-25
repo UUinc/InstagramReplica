@@ -54,10 +54,10 @@ class ProfilesController extends Controller
         $this->authorize('update', $user->profile);
 
         $data = request()->validate([
-            'Title' => '',
-            'Description' => '',
-            'Url' => 'nullable|url',
-            'image' => '',
+            'title' => '',
+            'description' => '',
+            'url' => 'nullable|url',
+            'image' => 'image',
         ]);
         
         $imagepath = $user->profile->image;
