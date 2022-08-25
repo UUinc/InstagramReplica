@@ -24,10 +24,10 @@ pre
     font-family: 'Open Sans', sans-serif !important;
     margin: 0 !important;
 }
-a
+a, .link
 {
     text-decoration: none !important;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 .hr
 {

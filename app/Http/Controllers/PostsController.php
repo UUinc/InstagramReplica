@@ -23,7 +23,8 @@ class PostsController extends Controller
 
     public function create()
     {
-        return view('posts.create');
+        $user = auth()->user();
+        return view('posts.create', compact('user'));
     }
 
     public function store()
