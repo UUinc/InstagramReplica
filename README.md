@@ -15,6 +15,7 @@ Technologies used: Laravel
 ![3](https://user-images.githubusercontent.com/63449913/186558519-e48d467a-f596-4848-bace-7e736951d0cc.JPG)
 ![4](https://user-images.githubusercontent.com/63449913/186558525-3fac94d3-9252-4109-b70e-0c9d9958af76.JPG)
 ![5](https://user-images.githubusercontent.com/63449913/186558530-f50a684d-114c-43f6-93d7-1156ba74f0be.JPG)
+![6](https://user-images.githubusercontent.com/63449913/186561055-3cbf4f7b-ed41-4216-9d35-e4a1f5ab6791.JPG)
 
 ### Be carful
 For auth I used
