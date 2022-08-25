@@ -4,7 +4,7 @@ The app is an Instagram Clone, I try to develop the basics of Instagram function
 
 You can download and update the application as you like.
 
-Technologies used: Laravel
+Technologies used: __Laravel__ and __SqlLite__
 
 - Laravel Framework : 9.25.1<br>
 - PHP version : 8.1.7
@@ -16,6 +16,20 @@ Technologies used: Laravel
 ![4](https://user-images.githubusercontent.com/63449913/186558525-3fac94d3-9252-4109-b70e-0c9d9958af76.JPG)
 ![5](https://user-images.githubusercontent.com/63449913/186558530-f50a684d-114c-43f6-93d7-1156ba74f0be.JPG)
 ![6](https://user-images.githubusercontent.com/63449913/186561055-3cbf4f7b-ed41-4216-9d35-e4a1f5ab6791.JPG)
+
+### Installing
+install composer:
+```
+http://getcomposer.org/download
+```
+install nodeJS:
+```
+https://nodejs.org/en/download
+```
+install laravel in terminal/cmd
+```
+composer global require laravel/installer
+```
 
 ### Be carful
 For auth I used
